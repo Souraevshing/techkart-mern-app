@@ -1,6 +1,6 @@
-#TechKart MERN App
+# TechKart MERN App
 
-##Website Link : https://techkart-app.herokuapp.com/
+## Website Link : https://techkart-app.herokuapp.com/
 
 ![](https://techkart-app.herokuapp.com/)
 
