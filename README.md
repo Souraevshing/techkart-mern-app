@@ -2,7 +2,7 @@
 
 ## Website Link : https://techkart-app.herokuapp.com/
 
-![](https://techkart-app.herokuapp.com/)
+![TechKart ](https://github.com/Souraevshing/techkart-mern-app/blob/main/techkart-app.png)
 
 ## Features
 
