@@ -1,9 +1,5 @@
 # TechKart MERN App
 
-## Website Link : https://techkart-app.herokuapp.com/
-
-![TechKart ](https://github.com/Souraevshing/techkart-mern-app/blob/main/techkart-app.png)
-
 ## Features
 
 - Full featured shopping cart
@@ -99,7 +95,7 @@ jane@example.com (Customer)
 
 The MIT License
 
-Copyright (c) 2020 Traversy Media https://traversymedia.com
+Copyright (c) 2020 Traversy Media <https://traversymedia.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
