@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "proxy": "https://ecommerce-app-backened.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,5 +1,5 @@
-import axios from 'axios'
+import axios from "axios";
 
-const URL = 'https://ecommerce-app-backened.herokuapp.com/'
+export const URL = "http://localhost:5000";
 
-export const FETCH = () => axios.get(URL)
+export const FETCH = () => axios.get(URL);

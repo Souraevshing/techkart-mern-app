@@ -1,5 +1,6 @@
 {
   "name": "techkart",
+  "proxy": "http://localhost:5000/",
   "version": "1.0.0",
   "description": "MERN shopping cart app",
   "main": "server.js",
@@ -10,8 +11,7 @@
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node backend/initializeDB",
-    "data:destroy": "node backend/initializeDB -d",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "data:destroy": "node backend/initializeDB -d"
   },
   "author": "saurav",
   "license": "MIT",

@@ -1,17 +1,30 @@
-import mongoose from 'mongoose'
+import dotenv from "dotenv";
+import { MongoClient, ServerApiVersion } from "mongodb";
+import mongoose from "mongoose";
 
-const connectDB = async () => {
-  try {
-    const conn = await mongoose.connect(process.env.CONNECTION_URI, {
+dotenv.config();
+
+const client = new MongoClient(process.env.CONNECTION_URI, {
+  serverSelectionTimeoutMS: 5000000,
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  },
+});
+
+async function connectDB() {
+  mongoose
+    .connect(process.env.CONNECTION_URI, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     })
-
-    console.log(`MongoDB Connected: ${conn.connection.host}`.cyan.underline)
-  } catch (error) {
-    console.error(`Error: ${error.message}`.red.underline.bold)
-    process.exit(1)
-  }
+    .then(() => {
+      console.log("MongoDB Connected");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
-export default connectDB
+export default connectDB;
